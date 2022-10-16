@@ -1,4 +1,4 @@
-# `web3-vue` 
+# `web3-vue3` 
 
 _A simple framework for building modern [Ethereum dApps](https://ethereum.org/beginners/)_
 

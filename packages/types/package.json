@@ -1,5 +1,5 @@
 {
-  "name": "@web3-vue/types",
+  "name": "@web3-vue3/types",
   "publishConfig": {
     "access": "public"
   },
