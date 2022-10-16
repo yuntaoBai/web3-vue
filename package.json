@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "web3-vue",
+  "version": "1.0.0",
+  "description": "A simple framework for building modern Ethereum dApps",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yuntaoBai/web3-vue.git"
+  },
+  "author": "Baiyuntao  <yuntaobai@163.com>",
+  "license": "ISC",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "publish:lerna": "lerna publish",
+    "clean": "lerna clean --yes && lerna exec -- rimraf yarn.lock dist/ .rts2_cache_{cjs,esm}/",
+    "build": "lerna run build",
+    "start": "lerna run --parallel --no-bail start -- --noClean",
+    "lint": "lerna run lint --parallel",
+    "test": "lerna run test --parallel"
+  },
+  "bugs": {
+    "url": "https://github.com/yuntaoBai/web3-vue/issues"
+  },
+  "homepage": "https://github.com/yuntaoBai/web3-vue#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.0.1"
+  }
+}
