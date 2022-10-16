@@ -5,7 +5,7 @@ _A simple framework for building modern [Ethereum dApps](https://ethereum.org/be
 ## Local Development
 
 - Clone repo\
-  `git clone https://github.com/NoahZinsmeister/web3-react.git`
+  `git clone https://github.com/yuntaoBai/web3-vue.git`
 
 - Install top-level dependencies\
   `yarn`
