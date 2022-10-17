@@ -34,9 +34,9 @@
   },
   "dependencies": {
     "@web3-vue3/abstract-connector": "^0.0.3",
-    "@web3-vue3/types": "^0.0.1",
+    "@web3-vue3/types": "^0.0.4",
     "authereum": "^0.1.14"
   },
   "license": "GPL-3.0-or-later",
-  "gitHead": "e725a091fef1e41d97c8d3c0b979481a08823327"
+  "gitHead": "dc922a594b8dfa5345049284ee0c9c7d20cee998"
 }
