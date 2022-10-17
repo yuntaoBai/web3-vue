@@ -44,5 +44,6 @@
   "peerDependencies": {
     "vue": ">=3.2.36"
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "gitHead": "e725a091fef1e41d97c8d3c0b979481a08823327"
 }

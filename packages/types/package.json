@@ -33,5 +33,5 @@
     "lint": "tsdx lint src"
   },
   "license": "GPL-3.0-or-later",
-  "gitHead": "4d9e8e0a8ac4d4921cd73dd3698ff68a33faf455"
+  "gitHead": "e725a091fef1e41d97c8d3c0b979481a08823327"
 }

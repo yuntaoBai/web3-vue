@@ -4,6 +4,7 @@
 export interface AbstractConnectorArguments {
   supportedChainIds?: number[]
 }
+
 /***
  * ConnectorUpdate
  ***/
@@ -12,6 +13,7 @@ export interface ConnectorUpdate<T = number | string> {
   chainId?: T
   account?: null | string
 }
+
 /***
  * ConnectorEvent
  ***/
