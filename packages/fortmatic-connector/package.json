@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@web3-vue3/abstract-connector": "^0.0.3",
-    "@web3-vue3/types": "^0.0.1",
+    "@web3-vue3/types": "^0.0.4",
     "fortmatic": "^1.0.0",
     "tiny-invariant": "^1.0.6"
   },
