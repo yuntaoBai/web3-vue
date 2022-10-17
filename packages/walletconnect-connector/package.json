@@ -35,8 +35,8 @@
   "dependencies": {
     "@walletconnect/ethereum-provider": "^1.7.1",
     "@walletconnect/types": "^1.7.1",
-    "@web3-vue3/abstract-connector": "^0.0.1",
-    "@web3-vue3/types": "^0.0.1",
+    "@web3-vue3/abstract-connector": "^0.0.2",
+    "@web3-vue3/types": "^0.0.2",
     "tiny-invariant": "^1.0.6"
   },
   "license": "GPL-3.0-or-later"

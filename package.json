@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "web3-vue3",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A simple framework for building modern Ethereum dApps",
   "repository": {
     "type": "git",
