@@ -37,5 +37,6 @@
     "@web3-vue3/types": "^0.0.1",
     "authereum": "^0.1.14"
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "gitHead": "4d9e8e0a8ac4d4921cd73dd3698ff68a33faf455"
 }

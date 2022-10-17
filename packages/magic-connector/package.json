@@ -38,5 +38,6 @@
     "magic-sdk": "^2.4.7",
     "tiny-invariant": "^1.0.6"
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "gitHead": "4d9e8e0a8ac4d4921cd73dd3698ff68a33faf455"
 }

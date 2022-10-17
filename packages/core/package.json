@@ -1,5 +1,5 @@
 {
-  "name": "@web3-vue3/walletconnect-connector",
+  "name": "@web3-vue3/core",
   "publishConfig": {
     "access": "public"
   },
@@ -22,7 +22,7 @@
     "url": "git://github.com/yuntaoBai/web3-vue.git"
   },
   "main": "dist/index.js",
-  "module": "dist/walletconnect-connector.esm.js",
+  "module": "dist/core.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
@@ -30,15 +30,19 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "lint": "tsdx lint src"
+    "test": "tsdx test --env=jsdom",
+    "lint": "tsdx lint src test"
   },
   "dependencies": {
-    "@walletconnect/ethereum-provider": "^1.7.1",
-    "@walletconnect/types": "^1.7.1",
+    "@ethersproject/keccak256": "^5.7.0",
     "@web3-vue3/abstract-connector": "^0.0.1",
     "@web3-vue3/types": "^0.0.1",
-    "tiny-invariant": "^1.0.6"
+    "tiny-invariant": "^1.0.6",
+    "tiny-warning": "^1.0.3",
+    "web3": "^1.8.0"
   },
-  "license": "GPL-3.0-or-later",
-  "gitHead": "4d9e8e0a8ac4d4921cd73dd3698ff68a33faf455"
+  "peerDependencies": {
+    "vue": ">=3.2.36"
+  },
+  "license": "GPL-3.0-or-later"
 }
