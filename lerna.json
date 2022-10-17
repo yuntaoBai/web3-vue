@@ -3,9 +3,13 @@
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "ignoreChanges": ["*.md"]
+      "ignoreChanges": [
+        "*.md"
+      ]
     }
   },
-  "packages": ["packages/*"],
-  "version": "0.0.3"
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent"
 }
