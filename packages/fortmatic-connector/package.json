@@ -1,0 +1,42 @@
+{
+  "name": "@web3-vue3/fortmatic-connector",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.0.1",
+  "description": "A simple framework for building modern Ethereum dApps",
+  "keywords": [
+    "vue",
+    "vue3",
+    "ethereum",
+    "javascript",
+    "typescript",
+    "web3",
+    "context",
+    "frontend",
+    "dapp"
+  ],
+  "author": "Baiyuntao  <yuntaobai@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yuntaoBai/web3-vue.git"
+  },
+  "main": "dist/index.js",
+  "module": "dist/fortmatic-connector.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "lint": "tsdx lint src"
+  },
+  "dependencies": {
+    "@web3-vue3/abstract-connector": "^0.0.1",
+    "@web3-vue3/types": "^0.0.1",
+    "fortmatic": "^1.0.0",
+    "tiny-invariant": "^1.0.6"
+  },
+  "license": "GPL-3.0-or-later"
+}
