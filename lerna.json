@@ -1,6 +1,6 @@
 {
   "useWorkspaces": true,
-  "npmClient": "npm",
+  "npmClient": "yarn",
   "command": {
     "publish": {
       "ignoreChanges": [
