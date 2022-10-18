@@ -1,4 +1,4 @@
-import { ConnectorUpdate } from '@web3-rvue3/types'
+import { ConnectorUpdate } from '@web3-vue3/types'
 import { AbstractConnector } from '@web3-vue3/abstract-connector'
 import invariant from 'tiny-invariant'
 
