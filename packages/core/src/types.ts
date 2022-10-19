@@ -36,3 +36,11 @@ export type web3Object = {
     utils: object,
     version: string
 }
+
+export interface App {
+    config: {
+        globalProperties: {
+            $web3Utils: object
+        }
+    }
+}

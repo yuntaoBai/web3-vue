@@ -1,8 +1,9 @@
 import Web3 from 'web3'
 import { provider } from 'web3-core'
+import { App } from './types'
 import store from './store'
 
-export default function (app: object, options: {provider: provider}) {
+export default function (app: App, options: {provider: provider}) {
     const { ethereum } = <any>window
     const web3 = new Web3(options.provider || ethereum)
     store.web3 = web3
