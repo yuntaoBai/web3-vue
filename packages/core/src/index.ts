@@ -3,12 +3,12 @@
 // import { connector } from './types'
 // import store from './store'
 import install from "./install";
-import useConnectWallet from './hooks/useConnectWallet'
+export { useConnectWallet } from './hooks'
+
 
 
 export default {
-    install,
-    useConnectWallet
+    install
 }
 // export default class VueWeb3 extends Web3 {
 //     static install: (app: object, options?: object) => void;
