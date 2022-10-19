@@ -1,6 +1,4 @@
-import { web3Object } from './types'
+import { Store } from './types'
 
-export default {
-    web3: <web3Object>{},
-    provider: null
-}
+const store: Store = {}
+export default store

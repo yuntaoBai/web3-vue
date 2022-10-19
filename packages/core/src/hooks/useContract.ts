@@ -1,5 +1,5 @@
 import { ref } from 'vue';
-import { connector } from "../types";
+import {connector} from "../types";
 import store from "../store";
 
 export default function(connector: connector) {

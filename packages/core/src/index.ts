@@ -3,7 +3,7 @@
 // import { connector } from './types'
 // import store from './store'
 import install from "./install";
-export { useConnectWallet } from './hooks'
+export { useConnectWallet, useContract } from './hooks'
 
 
 

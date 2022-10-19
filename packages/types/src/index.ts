@@ -18,7 +18,7 @@ export interface ConnectorUpdate<T = number | string> {
  * ConnectorEvent
  ***/
 export enum ConnectorEvent {
-  Update = 'Web3VueUpdate',
-  Error = 'Web3VueError',
-  Deactivate = 'Web3VueDeactivate'
+  Update = 'web3Update',
+  Error = 'web3Error',
+  Deactivate = 'web3Deactivate'
 }

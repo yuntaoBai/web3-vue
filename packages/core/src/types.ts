@@ -1,4 +1,5 @@
 import { ConnectorUpdate } from "@web3-vue3/types";
+import { provider } from 'web3-core'
 
 export type connector = {
     activate(): Promise<ConnectorUpdate>
@@ -22,4 +23,10 @@ export interface App {
             $web3Utils: object
         }
     }
+}
+
+export type Store = {
+    web3?: web3Object
+    provider?: provider
+    currentConnector?: connector
 }
