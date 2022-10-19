@@ -2,7 +2,7 @@ import Web3 from 'web3'
 import { provider } from 'web3-core'
 import { connector } from './types'
 import store from './sore'
-import install from "install";
+import install from "./install";
 import useConnectWallet from './hooks/useConnectWallet'
 
 export default class VueWeb3 extends Web3 {
