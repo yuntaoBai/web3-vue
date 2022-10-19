@@ -33,7 +33,7 @@
     "lint": "tsdx lint src"
   },
   "dependencies": {
-    "@portis/web3": "^4.0.5",
+    "@portis/web3": "^4.0.7",
     "@web3-vue3/abstract-connector": "^0.0.4",
     "@web3-vue3/types": "^0.0.5",
     "tiny-invariant": "^1.0.6"
