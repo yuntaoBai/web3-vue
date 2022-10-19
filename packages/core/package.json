@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "A simple framework for building modern Ethereum dApps",
   "keywords": [
     "vue",
@@ -35,8 +35,8 @@
   },
   "dependencies": {
     "@ethersproject/keccak256": "^5.7.0",
-    "@web3-vue3/abstract-connector": "^0.0.4",
-    "@web3-vue3/types": "^0.0.5",
+    "@web3-vue3/abstract-connector": "^0.0.5",
+    "@web3-vue3/types": "^0.0.6",
     "tiny-invariant": "^1.0.6",
     "tiny-warning": "^1.0.3",
     "web3": "^1.8.0"
