@@ -10,23 +10,17 @@ export type connector = {
 }
 
 export type web3Object = {
-    eth: object,
+    eth: {
+        Contract (abi: [], address: string, options?: {}): object
+    },
     shh?: object,
     bzz?: object,
     utils: object,
     version: string
 }
 
-export interface App {
-    config: {
-        globalProperties: {
-            $web3Utils: object
-        }
-    }
-}
-
 export type Store = {
-    web3?: web3Object
+    web3: web3Object
     provider?: provider
     currentConnector?: connector
 }

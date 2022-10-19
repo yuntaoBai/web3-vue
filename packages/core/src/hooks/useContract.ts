@@ -1,23 +1,7 @@
-import { ref } from 'vue';
-import {connector} from "../types";
 import store from "../store";
 
-export default function(connector: connector) {
-    const account = ref('')
-    const provider = ref({})
-    const error = ref(null)
-    store.currentConnector = connector
-    connector && connector.activate().then(res => {
-        account.value = res.account
-        provider.value = res.provider
-        store.provider = res.provider
-    }).catch(err => {
-        error.value = err
-    })
-
-    return {
-        account,
-        provider,
-        error
-    }
+export default (abi: [], contractAddress: string, options?: {}) => {
+    const Contract = store.web3.eth.Contract
+    const contract = new (Contract as any)(abi, contractAddress, options)
+    return contract.methods
 }
