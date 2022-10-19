@@ -5,6 +5,6 @@ export default async function(connector: connector) {
         throw Error('error')
         return
     }
-    const connectWallet = connector.activate()
+    const connectWallet = await connector.activate()
     console.log(connectWallet, 99999999)
 }
