@@ -11,7 +11,7 @@ export default class VueWeb3 extends Web3 {
     constructor(provider: provider) {
         // @ts-ignore
         super(provider);
-        store.web3 = this
+        store.web3 = this;
     }
 }
 
