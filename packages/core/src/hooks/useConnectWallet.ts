@@ -1,14 +1,25 @@
+import { ref } from 'vue';
 import {connector} from "types";
+import store from "store";
 
-export default async function(connector: connector) {
+export default function(connector: connector) {
+    const account = ref('')
+    const provider = ref({})
     if(!connector) {
         throw Error('error')
-        return
+        return {
+            account,
+            provider
+        }
     }
-    const connectWallet = await connector.activate()
-    console.log(connectWallet, 99999999)
+    connector.activate().then(res => {
+        account.value = res.account
+        provider.value = res.provider
+        store.provider = res.provider
+    })
+
     return {
-        account: connectWallet.account,
-        provider: connectWallet.provider
+        account,
+        provider
     }
 }
