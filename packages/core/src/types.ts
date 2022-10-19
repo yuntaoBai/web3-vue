@@ -11,7 +11,7 @@ export type connector = {
 
 export type web3Object = {
     eth: {
-        Contract (abi: [], address: string, options?: {}): object
+        Contract (abi: object[], address: string, options?: {}): object
     },
     shh?: object,
     bzz?: object,
