@@ -1,4 +1,4 @@
-import store from "sore";
+import store from "./store";
 
 export default function (app: object, options?: object) {
     // @ts-ignore
