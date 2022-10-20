@@ -64,13 +64,13 @@ export type Store = {
 
 export type netWorkType = {
     chainId: string | number
-    chainName: string
+    chainName?: string
     nativeCurrency?: {
         name: string
         symbol: string
         decimals: number
     },
-    rpcUrls: string[]
+    rpcUrls?: string[]
     blockExplorerUrls?: string[]
 }
 

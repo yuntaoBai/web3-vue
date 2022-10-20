@@ -63,6 +63,15 @@ Contract
    }
 ```
 
+Utils
+``` js
+ import { inject } from "vue"
+ setup() {
+    const util = inject('web3utils');
+    const amount = util.fromWei('2000000000000000000', 'ether')  
+ }
+```
+
 ## Local Development
 
 - Clone repo\
