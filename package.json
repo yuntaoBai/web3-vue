@@ -11,7 +11,7 @@
   "license": "ISC",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna publish",
+    "publish:lerna": "lerna publish",
     "clean": "lerna clean --yes && lerna exec -- rimraf yarn.lock yarn-error.log package-lock.json dist/ .rts2_cache_{cjs,esm}/",
     "build": "lerna run build",
     "start": "lerna run --parallel --no-bail start -- --noClean",
