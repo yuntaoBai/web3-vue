@@ -2,7 +2,7 @@ import { ref } from 'vue';
 import { connector } from "../types";
 import store from "../store";
 
-export default function(connector: connector) {
+export default (connector: connector) => {
     const account = ref('')
     const provider = ref({})
     const error = ref(null)
