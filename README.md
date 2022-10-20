@@ -77,6 +77,8 @@ Utils
     const util = inject('web3utils');
     const amount = util.fromWei('2000000000000000000', 'ether')  
  }
+ // vue2
+ // const amount = this.$web3utils.fromWei('2000000000000000000', 'ether') 
 ```
 
 Switch Add Chain
