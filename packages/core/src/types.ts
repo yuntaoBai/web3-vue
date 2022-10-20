@@ -46,6 +46,8 @@ export type web3Object = {
         getStorageAt(address: string, position: any): Promise<string>
         getCode(address: string): Promise<string>
         getBlock(blockHashOrBlockNumber: any): Promise<BlockTransactionString>
+        getTransactionReceipt(hash: string): Promise<object>
+
 
     },
     shh: object
