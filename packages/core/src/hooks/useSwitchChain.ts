@@ -1,9 +1,9 @@
-import { netWorkType } from "../types"
+import { netWorkType, RequestEvent } from "../types"
 export default (netWork: netWorkType) => {
     let res = null
     try {
         res = window.ethereum?.request({
-            method: 'wallet_switchEthereumChain',
+            method: RequestEvent.switchChain,
             params: [netWork]
         })
     } catch (e) {

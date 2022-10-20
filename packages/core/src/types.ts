@@ -71,3 +71,8 @@ export type netWorkType = {
     rpcUrls: string[]
     blockExplorerUrls?: string[]
 }
+
+export enum RequestEvent {
+    switchChain = "wallet_switchEthereumChain",
+    addChain = "wallet_addEthereumChain"
+}
