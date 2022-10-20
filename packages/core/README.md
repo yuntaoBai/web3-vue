@@ -1,3 +1,3 @@
-# @web3-react/core
+# @web3-vue3/core
 
-Please visit the [parent `web3-react` repository](https://github.com/NoahZinsmeister/web3-react) for documentation and details on this package.
+Please visit the [parent `web3-vue3` repository](https://github.com/yuntaoBai/web3-vue) for documentation and details on this package.
