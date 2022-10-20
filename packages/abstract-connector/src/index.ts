@@ -17,21 +17,21 @@ export abstract class AbstractConnector extends EventEmitter {
 
   protected emitUpdate(update: ConnectorUpdate): void {
     if (__DEV__) {
-      console.log(`Emitting '${ConnectorEvent.Update}' with payload`, update)
+      console.log(`Emit '${ConnectorEvent.Update}'`, update)
     }
     this.emit(ConnectorEvent.Update, update)
   }
 
   protected emitError(error: Error): void {
     if (__DEV__) {
-      console.log(`Emitting '${ConnectorEvent.Error}' with payload`, error)
+      console.log(`Emit '${ConnectorEvent.Error}'`, error)
     }
     this.emit(ConnectorEvent.Error, error)
   }
 
   protected emitDeactivate(): void {
     if (__DEV__) {
-      console.log(`Emitting '${ConnectorEvent.Deactivate}'`)
+      console.log(`Emit '${ConnectorEvent.Deactivate}'`)
     }
     this.emit(ConnectorEvent.Deactivate)
   }
