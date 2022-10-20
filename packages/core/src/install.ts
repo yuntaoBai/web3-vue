@@ -9,5 +9,6 @@ export default function (app:any, options?: { provider: provider }) {
     console.log(web3)
     store.web3 = web3
     app.config.globalProperties.$web3Utils = web3.utils
+    app.provide('web3utils', web3.utils)
     console.log(options)
 }
