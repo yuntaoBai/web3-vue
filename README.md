@@ -72,6 +72,31 @@ Utils
  }
 ```
 
+Switch Add Chain
+``` js
+import { useSwitchChain, useAddChain } from '@web3-vue3/core'
+setup() {
+  const switchChain = () => {
+    useSwitchChain({
+      chainId: `0x61`
+    })
+  }
+  const addChain = () => {
+    useAddChain({
+      chainId: `0x61`,
+      chainName: 'BSC test',
+      nativeCurrency: {
+        name: 'BNB',
+        symbol: 'BNB',
+        decimals: 18
+        },
+      rpcUrls: ["https://data-seed-prebsc-1-s3.binance.org:8545"],
+      blockExplorerUrls: ['https://testnet.bscscan.com']
+    })
+  } 
+ }
+```
+
 ## Local Development
 
 - Clone repo\
