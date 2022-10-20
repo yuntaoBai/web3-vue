@@ -33,6 +33,13 @@ Connect Wallet
       const { account, provider } = useConnectWallet(connector)
       state.account = account
       state.provider = provider
+      
+      //vue2  
+      //const connected = useConnectWallet(connector)
+      //connected.then(res => {
+        //this.account = res.account
+        //this.provider = res.provider
+      //})
     }
      return {
        state,
