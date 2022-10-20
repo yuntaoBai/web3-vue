@@ -57,6 +57,7 @@ export type web3Object = {
 }
 
 export type Store = {
+    vueVersion: number
     web3?: web3Object
     provider?: provider
     currentConnector?: connector
