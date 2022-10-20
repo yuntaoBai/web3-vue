@@ -14,46 +14,37 @@ export type connector = {
 export type web3Object = {
     eth: {
         Contract (abi: object, address: string, options?: {}): object
-        accounts: any
-        ens: Ens
-        abi: any
-        net: any
-        givenProvider: any
-        defaultAccount: string | null
-        defaultBlock: any
-        defaultCommon: any
-        defaultHardfork: any
-        defaultChain: any
-        transactionPollingTimeout: number
-        transactionConfirmationBlocks: number
-        transactionBlockTimeout: number
-        handleRevert: boolean
-        readonly currentProvider: any
+        accounts?: any
+        ens?: Ens
+        abi?: any
+        net?: any
+        givenProvider?: any
+        defaultAccount?: string | null
+        defaultBlock?: any
+        defaultCommon?: any
+        defaultHardfork?: any
+        defaultChain?: any
+        transactionPollingTimeout?: number
+        transactionConfirmationBlocks?: number
+        transactionBlockTimeout?: number
+        handleRevert?: boolean
+        readonly currentProvider?: any
         setProvider(provider: provider): boolean
-        BatchRequest: new () => any
-        getProtocolVersion(callback?: (error: Error, protocolVersion: string) => void): Promise<string>
-        isSyncing(callback?: (error: Error, syncing: Syncing) => void): Promise<Syncing | boolean>
-        getCoinbase(callback?: (error: Error, coinbaseAddress: string) => void): Promise<string>
-        isMining(callback?: (error: Error, mining: boolean) => void): Promise<boolean>
-        getHashrate(callback?: (error: Error, hashes: number) => void): Promise<number>
-        getNodeInfo(callback?: (error: Error, version: string) => void): Promise<string>
-        getChainId(callback?: (error: Error, version: number) => void): Promise<number>
+        BatchRequest?: new () => any
+        getProtocolVersion?(callback?: (error: Error, protocolVersion: string) => void): Promise<string>
+        isSyncing?(callback?: (error: Error, syncing: Syncing) => void): Promise<Syncing | boolean>
+        getCoinbase?(callback?: (error: Error, coinbaseAddress: string) => void): Promise<string>
+        isMining?(callback?: (error: Error, mining: boolean) => void): Promise<boolean>
+        getHashrate?(callback?: (error: Error, hashes: number) => void): Promise<number>
+        getNodeInfo?(callback?: (error: Error, version: string) => void): Promise<string>
+        getChainId?(callback?: (error: Error, version: number) => void): Promise<number>
         getGasPrice(callback?: (error: Error, gasPrice: string) => void): Promise<string>
-        getFeeHistory(blockCount: any, lastBlock: any, rewardPercentiles: number[], allback?: (error: Error, feeHistory: FeeHistoryResult) => void): Promise<FeeHistoryResult>
+        getFeeHistory?(blockCount: any, lastBlock: any, rewardPercentiles: number[], allback?: (error: Error, feeHistory: FeeHistoryResult) => void): Promise<FeeHistoryResult>
         getAccounts(callback?: (error: Error, accounts: string[]) => void): Promise<string[]>
         getBlockNumber(callback?: (error: Error, blockNumber: number) => void): Promise<number>
         getBalance(address: string): Promise<string>
-        getBalance(address: string, defaultBlock: any): Promise<string>
-        getBalance(address: string, callback?: (error: Error, balance: string) => void): Promise<string>
-        getBalance(address: string, defaultBlock: any, callback?: (error: Error, balance: string) => void): Promise<string>
         getStorageAt(address: string, position: any): Promise<string>
-        getStorageAt(address: string, position: any, defaultBlock: any): Promise<string>;
-        getStorageAt(address: string, position: any, callback?: (error: Error, storageAt: string) => void): Promise<string>;
-        getStorageAt(address: string, position: any, defaultBlock: any, callback?: (error: Error, storageAt: string) => void): Promise<string>
         getCode(address: string): Promise<string>
-        getCode(address: string, defaultBlock: any): Promise<string>
-        getCode(address: string, callback?: (error: Error, code: string) => void): Promise<string>
-        getCode(address: string, defaultBlock: any, callback?: (error: Error, code: string) => void): Promise<string>
         getBlock(blockHashOrBlockNumber: any): Promise<BlockTransactionString>
 
     },
@@ -64,7 +55,19 @@ export type web3Object = {
 }
 
 export type Store = {
-    web3: web3Object
+    web3?: web3Object
     provider?: provider
     currentConnector?: connector
+}
+
+export type netWorkType = {
+    chainId: string | number
+    chainName: string
+    nativeCurrency?: {
+        name: string
+        symbol: string
+        decimals: number
+    },
+    rpcUrls: string[]
+    blockExplorerUrls?: string[]
 }
