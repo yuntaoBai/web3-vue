@@ -7,6 +7,7 @@ export {
     useBalance,
     useBlockNumber,
     useSwitchChain,
+    useAddChain,
     useTransactionReceipt
 } from './hooks'
 

@@ -5,6 +5,7 @@ import useBalance from "./useBalance";
 import useGasPrice from "./useGasPrice";
 import useBlockNumber from "./useBlockNumber";
 import useSwitchChain from "./useSwitchChain";
+import useAddChain from "./useAddChain";
 import useTransactionReceipt from "./useTransactionReceipt";
 
 export {
@@ -15,5 +16,6 @@ export {
     useProvider,
     useBlockNumber,
     useSwitchChain,
+    useAddChain,
     useTransactionReceipt
 }
