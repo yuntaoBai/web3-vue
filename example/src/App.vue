@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { defineComponent, reactive, inject } from 'vue';
-import {useConnectWallet, useContract, useSwitchChain, useAddChain} from '@web3-vue3/core'
+import {useConnectWallet, useContract, useSwitchChain, useAddChain, useTransactionReceipt} from '@web3-vue3/core'
 import { InjectedConnector } from '@web3-vue3/injected-connector'
 import { abi } from "./abi/erc20";
 
@@ -37,10 +37,15 @@ export default defineComponent({
       const contract = useContract(abi, '0xD1f9056757a8B9fCA4b8095b62C4A47F57c2Ce63', {
         method: 'totalSupply'
       })
-      contract.call().then((res: any) => {
+      contract.call().then((res: object) => {
         const util = inject('web3utils')
         const amount = (util as any).fromWei(res, 'ether')
         console.log(amount)
+        // useTransactionReceipt(res.transactionHash).then((result: object) => {
+        //   if (result.status) {
+        //     console.log(result)
+        //   }
+        // })
       })
     }
 
