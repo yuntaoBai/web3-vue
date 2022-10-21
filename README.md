@@ -5,7 +5,9 @@ _A simple framework for building modern [Ethereum dApps](https://ethereum.org/be
 ## Installation
 
 ``` bash
- npm install vue @web3-vue3/core
+ npm install @web3-vue3/core
+ //or
+ yarn add @web3-vue3/core
 ```
   main.js
 ``` js
